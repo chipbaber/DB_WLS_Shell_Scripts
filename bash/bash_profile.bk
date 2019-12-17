@@ -1,0 +1,33 @@
+# .bash_profile
+
+# Get the aliases and functions
+if [ -f ~/.bashrc ]; then
+	. ~/.bashrc
+fi
+
+# User specific environment and startup programs
+WLS_LOG=/oracle/app/wls_12_1_3/infra_home/user_projects/domains/storystudio/bin
+export WLS_LOG
+
+JAVA_HOME=/oracle/java/jdk1.7.0_21
+export JAVA_HOME
+
+#WLS_HOME=/oracle/app/wls_12_1_3/infra_home/user_projects/domains/storystudio
+#export WLS_HOME
+
+export EDITOR=vi
+
+PATH=$PATH:/sbin:/usr/local/sbin:/oracle/app/httpd/Oracle_HTTPD/instances/http_1/bin:$JAVA_HOME/bin:/home/oracle/ffmpeg/ffmpeg-2.1.3-64bit-static:/oracle/app/oracle/product/12.1.0/db_home1/bin
+export PATH
+
+ORACLE_SID=orcl
+export ORACLE_SID
+
+ORACLE_HOME=/oracle/app/oracle/product/12.1.0/db_home1
+export ORACLE_HOME
+
+CLASSPATH=$ORACLE_HOME/ucp/lib/ucp.jar:$ORACLE_HOME/jdbc/lib/ojdbc6.jar:$CLASSPATH
+export CLASSPATH
+
+#WINDOWMANAGER=gnome-session
+#export WINDOWMANAGER
